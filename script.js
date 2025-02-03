@@ -1,6 +1,6 @@
 // Animazione di scrittura dinamica
 document.addEventListener("DOMContentLoaded", function () {
-    const text = "Il Tuo Nome Qui";
+    const text = "Andrea Luminari";
     const typingElement = document.querySelector(".typing-animation");
     let index = 0;
 
