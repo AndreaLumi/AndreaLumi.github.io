@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentazione Personale - Informatica</title>
+    <!-- Importazione di Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <style>
         /* Reset di base */
         * {
@@ -13,9 +15,9 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
             line-height: 1.6;
         }
 
@@ -31,36 +33,46 @@
 
         /* Container principale */
         header {
-            background: #333;
-            color: white;
             text-align: center;
-            padding: 50px;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-bottom: 5px solid #2575fc;
+            animation: fadeIn 2s ease-out;
         }
 
         header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
         }
 
         header p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            font-weight: 300;
         }
 
         /* Sezione di presentazione */
         .section {
-            padding: 50px 10%;
+            padding: 60px 10%;
             text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+            color: #f1f1f1;
         }
 
         .section p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            color: #ddd;
             line-height: 1.8;
-            max-width: 700px;
+            margin-bottom: 30px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
@@ -72,74 +84,100 @@
             background-color: #fff;
             padding: 40px;
             margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #333;
         }
 
         .project:hover {
-            transform: translateY(-10px);
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
         }
 
         .project h3 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-bottom: 10px;
+            font-weight: 500;
         }
 
         .project p {
             font-size: 1.1rem;
-            color: #666;
+            color: #555;
+            margin-bottom: 20px;
         }
 
         .button {
-            background-color: #007BFF;
+            background-color: #2575fc;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
             text-decoration: none;
-            font-size: 1.1rem;
-            transition: background-color 0.3s ease;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .button:hover {
-            background-color: #0056b3;
+            background-color: #1e5bb0;
+            transform: scale(1.05);
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ddd;
             text-align: center;
             padding: 20px;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            margin-top: 60px;
+        }
+
+        /* Responsività */
+        @media (max-width: 768px) {
+            .section {
+                padding: 40px 5%;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+            }
+
+            .section p {
+                font-size: 1rem;
+            }
+
+            .project {
+                padding: 30px;
+            }
+
+            .button {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
 
     <header class="fade-in">
-        <h1>Benvenuti nella mia pagina!</h1>
-        <p>Un viaggio nel mondo dell'informatica e dei progetti digitali</p>
+        <h1>Benvenuti nel mio mondo digitale!</h1>
+        <p>Scopri la passione per l'informatica e i miei progetti tecnologici</p>
     </header>
 
     <section class="section fade-in">
         <h2>Chi sono</h2>
-        <p>Mi chiamo [Nome] e sono un appassionato di tecnologia e sviluppo software. Da sempre affascinato dall'informatica, ho intrapreso un percorso di studi e progetti che mi hanno permesso di esplorare vari ambiti della programmazione, dall'analisi dei dati alla creazione di applicazioni web.</p>
+        <p>Mi chiamo [Nome] e sono un appassionato di tecnologia, sviluppo software e innovazione digitale. Da anni esploro il vasto mondo dell'informatica, creando progetti che spaziano dalla programmazione alla creazione di applicazioni web moderne.</p>
     </section>
 
     <section class="section fade-in">
         <h2>Il mio progetto</h2>
         <div class="project fade-in">
-            <h3>Progetto Web: Gestione delle Risorse</h3>
-            <p>Un'applicazione web per la gestione delle risorse aziendali, che permette di monitorare e organizzare il flusso di lavoro e l'allocazione delle risorse in modo semplice e intuitivo.</p>
+            <h3>Gestione delle Risorse - Progetto Web</h3>
+            <p>Questo progetto consiste in un'applicazione web sviluppata per semplificare la gestione delle risorse aziendali. Offre una dashboard interattiva per monitorare l'allocazione delle risorse, con funzionalità di reportistica e pianificazione integrata.</p>
             <a href="#" class="button">Scopri di più</a>
         </div>
     </section>
 
     <footer class="fade-in">
-        <p>&copy; 2025 [Nome]. Tutti i diritti riservati.</p>
+        <p>&copy; 2025 [Nome]. All rights reserved.</p>
     </footer>
 
 </body>
