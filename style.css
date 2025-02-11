@@ -1,158 +1,63 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Palette Blu */
-:root {
-    --primary-color: #0a192f;
-    --secondary-color: #112240;
-    --accent-color: #64ffda;
-    --text-color: #ccd6f6;
-    --white: #ffffff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
 
 body {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    padding: 20px;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: url('illustrazione-3d-di-sfondo-scuro-di-sicurezza-online_1419-2804.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
 }
 
-/* Header */
 header {
-    text-align: center;
-    padding: 50px 0;
-    background: var(--secondary-color);
-    animation: fadeIn 2s ease-in-out;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 20px;
 }
 
-h1 {
-    font-size: 3rem;
-    color: var(--accent-color);
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
-.subtitle {
-    font-size: 1.5rem;
-    color: var(--white);
+header h2 {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    font-weight: 300;
 }
 
-/* Navbar */
-nav {
-    background: var(--secondary-color);
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-nav a {
-    color: var(--text-color);
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--accent-color);
-}
-
-/* Sezioni */
 section {
-    padding: 50px 20px;
-    text-align: center;
-    animation: slideIn 1.5s ease-in-out;
-}
-
-.skills-container, .portfolio-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.skill-card, .project-card {
-    background: var(--secondary-color);
-    padding: 20px;
-    border: 2px solid var(--accent-color);
+    background: rgba(0, 0, 0, 0.6);
+    margin: 50px auto;
+    padding: 40px;
+    width: 80%;
+    max-width: 800px;
     border-radius: 10px;
-    transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.skill-card:hover, .project-card:hover {
-    transform: translateY(-10px);
-    background: var(--accent-color);
-    color: var(--primary-color);
+section h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
-/* Form di contatto */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: auto;
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
 }
 
-input, textarea {
-    padding: 10px;
-    border: 2px solid var(--accent-color);
-    background: var(--secondary-color);
-    color: var(--text-color);
-    border-radius: 5px;
-    resize: vertical;
-}
-
-button {
-    background: var(--accent-color);
-    color: var(--primary-color);
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: var(--white);
-    color: var(--secondary-color);
-}
-
-/* Footer */
 footer {
-    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    background: var(--secondary-color);
-    color: var(--text-color);
+    font-size: 1em;
 }
 
-/* Animazioni */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-@keyframes slideIn {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    nav ul {
-        flex-direction: column;
-    }
+footer a:hover {
+    text-decoration: underline;
 }
