@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentazione Personale - Informatica</title>
+    <style>
+        /* Reset di base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Animazione di ingresso */
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Container principale */
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Sezione di presentazione */
+        .section {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Box progetto */
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fade-in">
+        <h1>Benvenuti nella mia pagina!</h1>
+        <p>Un viaggio nel mondo dell'informatica e dei progetti digitali</p>
+    </header>
+
+    <section class="section fade-in">
+        <h2>Chi sono</h2>
+        <p>Mi chiamo [Nome] e sono un appassionato di tecnologia e sviluppo software. Da sempre affascinato dall'informatica, ho intrapreso un percorso di studi e progetti che mi hanno permesso di esplorare vari ambiti della programmazione, dall'analisi dei dati alla creazione di applicazioni web.</p>
+    </section>
+
+    <section class="section fade-in">
+        <h2>Il mio progetto</h2>
+        <div class="project fade-in">
+            <h3>Progetto Web: Gestione delle Risorse</h3>
+            <p>Un'applicazione web per la gestione delle risorse aziendali, che permette di monitorare e organizzare il flusso di lavoro e l'allocazione delle risorse in modo semplice e intuitivo.</p>
+            <a href="#" class="button">Scopri di più</a>
+        </div>
+    </section>
+
+    <footer class="fade-in">
+        <p>&copy; 2025 [Nome]. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
