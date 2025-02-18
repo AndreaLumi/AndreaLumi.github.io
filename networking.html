@@ -7,16 +7,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
-<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
-    <div class="max-w-2xl p-6 bg-gray-800 rounded-2xl shadow-lg text-center opacity-0" id="card">
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="max-w-4xl p-6 bg-gray-800 rounded-2xl shadow-lg text-center opacity-0" id="card">
         <h1 class="text-4xl font-bold text-blue-400 mb-4">Rete Aziendale Autodromo Di Monza</h1>
-        <p class="text-lg text-gray-300">Una breve descrizione del progetto che illustri il suo scopo e le sue caratteristiche principali.</p>
-        <img src="Progetto.png" alt="Progetto Luminari">
+        <p class="text-lg text-gray-300 mb-4">
+            Questa rete aziendale simulata in Cisco Packet Tracer è strutturata per supportare diverse funzioni aziendali, suddivise in più dipartimenti. Ecco una sintesi del suo funzionamento:
+            <br><br>
+            <strong>Divisione in reparti:</strong> La rete è suddivisa in sezioni per Amministrazione, Dipendenti, Sicurezza e dispositivi wireless. I router gestiscono la connessione tra di loro.
+            <br><br>
+            <strong>Server e servizi:</strong> Ci sono server dedicati a vari servizi, come il DHCP per assegnare automaticamente gli indirizzi IP e la condivisione di file e stampanti.
+            <br><br>
+            <strong>Connessioni:</strong> I dispositivi, come PC, laptop e stampanti, sono collegati tramite switch e access point per la rete wireless.
+            <br><br>
+            <strong>Sicurezza:</strong> I router separano le reti per garantire una maggiore protezione dei dati e una gestione efficiente del traffico.
+        </p>
     </div>
+    <img src="Progetto.png" alt="Progetto Luminari" class="w-full h-auto max-w-screen-lg mt-6 opacity-0" id="image">
     
     <script>
         gsap.to("#card", {opacity: 1, y: -20, duration: 1, ease: "power3.out"});
+        gsap.to("#image", {opacity: 1, duration: 1, delay: 0.5, ease: "power3.out"});
     </script>
 </body>
 </html>
-
