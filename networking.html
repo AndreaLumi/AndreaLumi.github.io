@@ -25,6 +25,13 @@
 
     <img src="Progetto.png" alt="Progetto Luminari" class="w-full h-auto max-w-screen-lg mt-6 opacity-0" id="image">
 
+    <div class="text-center mt-6">
+        <h2 class="text-2xl font-bold text-blue-300">LAN Pubblica</h2>
+        <p class="text-lg text-gray-300">Inserisci qui il tuo testo descrittivo</p>
+    </div>
+    
+    <img src="Lan Pubblica.PNG" alt="LAN Pubblica" class="w-full h-auto max-w-screen-lg mt-4 opacity-0" id="lan-image">
+
     <a href="Progetto Networking Luminari.pkt" download="Progetto_Luminari.pkt" 
        class="mt-6 bg-[#2575fc] hover:bg-[#1e63d6] text-white font-bold py-2 px-6 rounded-lg shadow-lg transition-all duration-300 opacity-0 relative z-10" 
        id="download-btn">
@@ -34,7 +41,8 @@
     <script>
         gsap.to("#card", {opacity: 1, y: -20, duration: 1, ease: "power3.out"});
         gsap.to("#image", {opacity: 1, duration: 1, delay: 0.5, ease: "power3.out"});
-        gsap.to("#download-btn", {opacity: 1, duration: 1, delay: 1, ease: "power3.out"}); // Animazione per rendere visibile il bottone
+        gsap.to("#lan-image", {opacity: 1, duration: 1, delay: 0.7, ease: "power3.out"});
+        gsap.to("#download-btn", {opacity: 1, duration: 1, delay: 1, ease: "power3.out"});
     </script>
 </body>
 </html>
