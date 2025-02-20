@@ -27,10 +27,17 @@
 
     <div class="text-center mt-6">
         <h2 class="text-2xl font-bold text-blue-300">LAN Pubblica</h2>
-        <p class="text-lg text-gray-300">Nella lan Pubblica, dove hanno accesso ospiti e clienti, sono stati configurati gli indirizzi IP Tramite un server DHCP. Nella LAN è possibile portare anche i propri disponibili e connetterli alla rete Wi-Fi tramite le credenziali presenti all'interno della struttura.</p>
+        <p class="text-lg text-gray-300">Nella LAN Pubblica, dove hanno accesso ospiti e clienti, sono stati configurati gli indirizzi IP Tramite un server DHCP. Nella LAN è possibile portare anche i propri disponibili e connetterli alla rete Wi-Fi tramite le credenziali presenti all'interno della struttura.</p>
     </div>
     
     <img src="Lan Pubblica.PNG" alt="LAN Pubblica" class="w-full h-auto max-w-screen-lg mt-4 opacity-0" id="lan-image">
+
+    <div class="text-center mt-6">
+        <h2 class="text-2xl font-bold text-blue-300">LAN Dipendenti e Sicurezza</h2>
+        <p class="text-lg text-gray-300">Nella Lan Dipendenti e Sicurezza è presenta una Vlan che isola la sezione Sicurezza dal resto della rete, come dimostrato dalla simulazione effettutata nell'immagine sottostante. Mentre la sezione Dipendenti è libera di comunicare con la LAN Pubblica.</p>
+    </div>
+    
+    <img src="Lan Dipendenti e Sicurezza.PNG" alt="LAN Dipendenti e Sicurezza" class="w-full h-auto max-w-screen-lg mt-4 opacity-0" id="lan-sec-image">
 
     <a href="Progetto Networking Luminari.pkt" download="Progetto_Luminari.pkt" 
        class="mt-6 bg-[#2575fc] hover:bg-[#1e63d6] text-white font-bold py-2 px-6 rounded-lg shadow-lg transition-all duration-300 opacity-0 relative z-10" 
@@ -42,6 +49,7 @@
         gsap.to("#card", {opacity: 1, y: -20, duration: 1, ease: "power3.out"});
         gsap.to("#image", {opacity: 1, duration: 1, delay: 0.5, ease: "power3.out"});
         gsap.to("#lan-image", {opacity: 1, duration: 1, delay: 0.7, ease: "power3.out"});
+        gsap.to("#lan-sec-image", {opacity: 1, duration: 1, delay: 0.9, ease: "power3.out"});
         gsap.to("#download-btn", {opacity: 1, duration: 1, delay: 1, ease: "power3.out"});
     </script>
 </body>
