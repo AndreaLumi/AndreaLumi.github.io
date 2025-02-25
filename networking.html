@@ -6,55 +6,40 @@
     <title>Presentazione Progetto</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
-    <div class="max-w-4xl p-6 bg-gray-800 rounded-2xl shadow-lg text-center opacity-0" id="card">
-        <h1 class="text-4xl font-bold text-blue-400 mb-4">Rete Aziendale Autodromo Di Monza</h1>
-        <p class="text-lg text-gray-300 mb-4">
-            Questa rete aziendale simulata in Cisco Packet Tracer è strutturata per supportare diverse funzioni aziendali, suddivise in più dipartimenti. Ecco una sintesi del suo funzionamento:
-            <br><br>
-            <strong>Divisione in reparti:</strong> La rete è suddivisa in Amministrazione, Dipendenti e Sicurezza, Paddock e Stampa e dispositivi pubblici. I router sono connessi tra di loro tramite un Routing Dinamico (RIP).
-            <br><br>
-            <strong>Server e servizi:</strong> Ci sono server dedicati a vari servizi, come il DHCP nella rete pubblica, per assegnare automaticamente gli indirizzi IP.
-            <br><br>
-            <strong>Connessioni:</strong> I dispositivi, come PC, laptop e stampanti, sono collegati tramite switch e access point per la rete wireless.
-            <br><br>
-            <strong>Sicurezza:</strong>La rete Amministrazione è isolata tramite Vlan e tramite access list per garantire maggiore sicurezza e il dipartimento Sicurezza è isolato tramite Vlan.
+<body class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="max-w-4xl p-8 glass rounded-2xl shadow-2xl text-center opacity-0" id="card">
+        <h1 class="text-5xl font-extrabold text-blue-400 mb-6">Rete Aziendale Autodromo Di Monza</h1>
+        <p class="text-lg text-gray-300 leading-relaxed">
+            Questa rete aziendale simulata in Cisco Packet Tracer è strutturata per supportare diverse funzioni aziendali, suddivise in più dipartimenti.
         </p>
     </div>
 
-    <img src="Progetto.png" alt="Progetto Luminari" class="w-full h-auto max-w-screen-lg mt-6 opacity-0" id="image">
+    <img src="Progetto.png" alt="Progetto Luminari" class="w-full max-w-3xl mt-8 rounded-lg shadow-lg opacity-0" id="image">
 
-    <div class="text-center mt-6">
-        <h2 class="text-2xl font-bold text-blue-300">LAN Pubblica</h2>
-        <p class="text-lg text-gray-300">Nella LAN Pubblica, dove hanno accesso ospiti e clienti, sono stati configurati gli indirizzi IP Tramite un server DHCP. Nella LAN è possibile portare anche i propri disponibili e connetterli alla rete Wi-Fi tramite le credenziali presenti all'interno della struttura.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div class="p-6 glass rounded-lg shadow-lg opacity-0" id="lan-image">
+            <h2 class="text-2xl font-bold text-blue-300 mb-4">LAN Pubblica</h2>
+            <p class="text-lg text-gray-300">Nella LAN Pubblica, gli ospiti possono connettersi tramite un server DHCP.</p>
+            <img src="Lan Pubblica.PNG" alt="LAN Pubblica" class="w-full rounded-lg mt-4">
+        </div>
+        
+        <div class="p-6 glass rounded-lg shadow-lg opacity-0" id="lan-sec-image">
+            <h2 class="text-2xl font-bold text-blue-300 mb-4">LAN Dipendenti e Sicurezza</h2>
+            <p class="text-lg text-gray-300">La VLAN isola la sicurezza dal resto della rete per una protezione avanzata.</p>
+            <img src="Lan Dipendenti e Sicurezza.PNG" alt="LAN Dipendenti e Sicurezza" class="w-full rounded-lg mt-4">
+        </div>
     </div>
     
-    <img src="Lan Pubblica.PNG" alt="LAN Pubblica" class="w-full h-auto max-w-screen-lg mt-4 opacity-0" id="lan-image">
-
-    <div class="text-center mt-6">
-        <h2 class="text-2xl font-bold text-blue-300">LAN Dipendenti e Sicurezza</h2>
-        <p class="text-lg text-gray-300">Nella LAN Dipendenti e Sicurezza è presente una VLAN che isola la sezione Sicurezza dal resto della rete, come dimostrato dalla simulazione effettuata nell'immagine sottostante. Mentre la sezione Dipendenti è libera di comunicare con la LAN Pubblica.</p>
-    </div>
-    
-    <img src="Lan Dipendenti e Sicurezza.PNG" alt="LAN Dipendenti e Sicurezza" class="w-full h-auto max-w-screen-lg mt-4 opacity-0" id="lan-sec-image">
-
-    <div class="text-center mt-6">
-        <h2 class="text-2xl font-bold text-blue-300">LAN Paddock e Stampa</h2>
-        <p class="text-lg text-gray-300">In questa LAN è presente uno Spanning Tree che serve per prevenire i loop di rete creando una topologia di rete priva di cicli e viene utilizzato per determinare il percorso più breve e stabile tra i dispositivi di rete in una LAN. Come nella simulazione nell'immagine le due sezione sono comunicanti tra di loro.</p>
-    </div>
-    
-    <img src="Lan_Paddock_Stampa.PNG" alt="LAN Paddock e Stampa" class="w-full h-auto max-w-screen-lg mt-4 opacity-0" id="lan-paddock-image">
-
-    <div class="text-center mt-6">
-        <h2 class="text-2xl font-bold text-blue-300">Simulazione della LAN</h2>
-        <p class="text-lg text-gray-300">Questa è una simulazione per vedere la corretta comunicazione tra la LAN Dipendenti e la LAN Pubblica.</p>
-    </div>
-    
-    <img src="Simulazione_Lan.PNG" alt="Simulazione della LAN" class="w-full h-auto max-w-screen-lg mt-4 opacity-0" id="lan-simulation-image">
-
     <a href="Progetto Networking Luminari.pkt" download="Progetto_Luminari.pkt" 
-       class="mt-6 bg-[#2575fc] hover:bg-[#1e63d6] text-white font-bold py-2 px-6 rounded-lg shadow-lg transition-all duration-300 opacity-0 relative z-10" 
+       class="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 opacity-0" 
        id="download-btn">
         Scarica il Progetto
     </a>
@@ -64,9 +49,7 @@
         gsap.to("#image", {opacity: 1, duration: 1, delay: 0.5, ease: "power3.out"});
         gsap.to("#lan-image", {opacity: 1, duration: 1, delay: 0.7, ease: "power3.out"});
         gsap.to("#lan-sec-image", {opacity: 1, duration: 1, delay: 0.9, ease: "power3.out"});
-        gsap.to("#lan-paddock-image", {opacity: 1, duration: 1, delay: 1.1, ease: "power3.out"});
-        gsap.to("#lan-simulation-image", {opacity: 1, duration: 1, delay: 1.3, ease: "power3.out"});
-        gsap.to("#download-btn", {opacity: 1, duration: 1, delay: 1.5, ease: "power3.out"});
+        gsap.to("#download-btn", {opacity: 1, duration: 1, delay: 1.1, ease: "power3.out"});
     </script>
 </body>
 </html>
