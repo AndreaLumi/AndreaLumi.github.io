@@ -36,6 +36,18 @@
             <p class="text-lg text-gray-300">La VLAN isola la sicurezza dal resto della rete per una protezione avanzata.</p>
             <img src="Lan Dipendenti e Sicurezza.PNG" alt="LAN Dipendenti e Sicurezza" class="w-full rounded-lg mt-4">
         </div>
+        
+        <div class="p-6 glass rounded-lg shadow-lg opacity-0" id="lan-paddock-image">
+            <h2 class="text-2xl font-bold text-blue-300 mb-4">LAN Paddock e Stampa</h2>
+            <p class="text-lg text-gray-300">In questa LAN è presente uno Spanning Tree per prevenire i loop di rete e garantire un percorso stabile.</p>
+            <img src="Lan_Paddock_Stampa.PNG" alt="LAN Paddock e Stampa" class="w-full rounded-lg mt-4">
+        </div>
+        
+        <div class="p-6 glass rounded-lg shadow-lg opacity-0" id="lan-simulation-image">
+            <h2 class="text-2xl font-bold text-blue-300 mb-4">Simulazione della LAN</h2>
+            <p class="text-lg text-gray-300">Questa è una simulazione per vedere la corretta comunicazione tra la LAN Dipendenti e la LAN Pubblica.</p>
+            <img src="Simulazione_Lan.PNG" alt="Simulazione della LAN" class="w-full rounded-lg mt-4">
+        </div>
     </div>
     
     <a href="Progetto Networking Luminari.pkt" download="Progetto_Luminari.pkt" 
@@ -49,7 +61,9 @@
         gsap.to("#image", {opacity: 1, duration: 1, delay: 0.5, ease: "power3.out"});
         gsap.to("#lan-image", {opacity: 1, duration: 1, delay: 0.7, ease: "power3.out"});
         gsap.to("#lan-sec-image", {opacity: 1, duration: 1, delay: 0.9, ease: "power3.out"});
-        gsap.to("#download-btn", {opacity: 1, duration: 1, delay: 1.1, ease: "power3.out"});
+        gsap.to("#lan-paddock-image", {opacity: 1, duration: 1, delay: 1.1, ease: "power3.out"});
+        gsap.to("#lan-simulation-image", {opacity: 1, duration: 1, delay: 1.3, ease: "power3.out"});
+        gsap.to("#download-btn", {opacity: 1, duration: 1, delay: 1.5, ease: "power3.out"});
     </script>
 </body>
 </html>
