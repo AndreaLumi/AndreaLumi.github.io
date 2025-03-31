@@ -9,14 +9,15 @@
     <style>
         .glass {
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
-<body class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
-    <div class="max-w-4xl p-8 glass rounded-2xl shadow-2xl text-center opacity-0" id="card">
-        <h1 class="text-5xl font-extrabold text-blue-400 mb-6">Rete Aziendale Autodromo Di Monza</h1>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center min-h-screen p-6">
+    <div class="max-w-4xl p-12 glass rounded-3xl shadow-2xl text-center opacity-0" id="card">
+        <h1 class="text-6xl font-extrabold text-blue-400 mb-8">Rete Aziendale Autodromo Di Monza</h1>
         <p class="text-lg text-gray-300 leading-relaxed">
             Questa rete aziendale simulata in Cisco Packet Tracer è strutturata per supportare diverse funzioni aziendali, suddivise in più dipartimenti.
             <br><br>
@@ -26,43 +27,47 @@
             <br><br>
             <strong>Connessioni:</strong> I dispositivi, come PC, laptop e stampanti, sono collegati tramite switch e access point per la rete wireless.
             <br><br>
-            <strong>Sicurezza:</strong>La rete Amministrazione è isolata tramite Vlan e tramite access list per garantire maggiore sicurezza e il dipartimento Sicurezza è isolato tramite Vlan.
+            <strong>Sicurezza:</strong> La rete Amministrazione è isolata tramite VLAN e tramite access list per garantire maggiore sicurezza e il dipartimento Sicurezza è isolato tramite VLAN.
         </p>
     </div>
 
-    <img src="Progetto.png" alt="Progetto Luminari" class="w-full max-w-3xl mt-8 rounded-lg shadow-lg opacity-0" id="image">
+    <img src="images/Progetto.png" alt="Progetto Luminari" class="w-full max-w-3xl mt-10 rounded-2xl shadow-2xl opacity-0" id="image">
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-        <div class="p-6 glass rounded-lg shadow-lg opacity-0" id="lan-image">
-            <h2 class="text-2xl font-bold text-blue-300 mb-4">LAN Pubblica</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
+        <div class="p-8 glass rounded-2xl shadow-xl opacity-0" id="lan-image">
+            <h2 class="text-3xl font-bold text-blue-300 mb-4">LAN Pubblica</h2>
             <p class="text-lg text-gray-300">Nella LAN Pubblica, gli ospiti possono connettersi tramite un server DHCP.</p>
-            <img src="Lan Pubblica.PNG" alt="LAN Pubblica" class="w-full rounded-lg mt-4">
+            <img src="images/Lan Pubblica.PNG" alt="LAN Pubblica" class="w-full rounded-xl mt-4">
         </div>
         
-        <div class="p-6 glass rounded-lg shadow-lg opacity-0" id="lan-sec-image">
-            <h2 class="text-2xl font-bold text-blue-300 mb-4">LAN Dipendenti e Sicurezza</h2>
+        <div class="p-8 glass rounded-2xl shadow-xl opacity-0" id="lan-sec-image">
+            <h2 class="text-3xl font-bold text-blue-300 mb-4">LAN Dipendenti e Sicurezza</h2>
             <p class="text-lg text-gray-300">La VLAN isola la sicurezza dal resto della rete per una protezione avanzata.</p>
-            <img src="Lan Dipendenti e Sicurezza.PNG" alt="LAN Dipendenti e Sicurezza" class="w-full rounded-lg mt-4">
+            <img src="images/Lan Dipendenti e Sicurezza.PNG" alt="LAN Dipendenti e Sicurezza" class="w-full rounded-xl mt-4">
         </div>
         
-        <div class="p-6 glass rounded-lg shadow-lg opacity-0" id="lan-paddock-image">
-            <h2 class="text-2xl font-bold text-blue-300 mb-4">LAN Paddock e Stampa</h2>
+        <div class="p-8 glass rounded-2xl shadow-xl opacity-0" id="lan-paddock-image">
+            <h2 class="text-3xl font-bold text-blue-300 mb-4">LAN Paddock e Stampa</h2>
             <p class="text-lg text-gray-300">In questa LAN è presente uno Spanning Tree per prevenire i loop di rete e garantire un percorso stabile.</p>
-            <img src="Lan_Paddock_Stampa.PNG" alt="LAN Paddock e Stampa" class="w-full rounded-lg mt-4">
+            <img src="images/Lan_Paddock_Stampa.PNG" alt="LAN Paddock e Stampa" class="w-full rounded-xl mt-4">
         </div>
         
-        <div class="p-6 glass rounded-lg shadow-lg opacity-0" id="lan-simulation-image">
-            <h2 class="text-2xl font-bold text-blue-300 mb-4">Simulazione della LAN</h2>
+        <div class="p-8 glass rounded-2xl shadow-xl opacity-0" id="lan-simulation-image">
+            <h2 class="text-3xl font-bold text-blue-300 mb-4">Simulazione della LAN</h2>
             <p class="text-lg text-gray-300">Questa è una simulazione per vedere la corretta comunicazione tra la LAN Dipendenti e la LAN Pubblica.</p>
-            <img src="Simulazione_Lan.PNG" alt="Simulazione della LAN" class="w-full rounded-lg mt-4">
+            <img src="images/Simulazione_Lan.PNG" alt="Simulazione della LAN" class="w-full rounded-xl mt-4">
         </div>
     </div>
     
     <a href="Progetto Networking Luminari.pkt" download="Progetto_Luminari.pkt" 
-       class="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 opacity-0" 
+       class="mt-12 bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-12 rounded-2xl shadow-xl transition-all duration-300 opacity-0" 
        id="download-btn">
         Scarica il Progetto
     </a>
+
+    <footer class="mt-16 py-6 text-center text-gray-400 text-sm opacity-0" id="footer">
+        &copy; 2025 Andrea Luminari. Tutti i diritti riservati.
+    </footer>
 
     <script>
         gsap.to("#card", {opacity: 1, y: -20, duration: 1, ease: "power3.out"});
@@ -72,6 +77,7 @@
         gsap.to("#lan-paddock-image", {opacity: 1, duration: 1, delay: 1.1, ease: "power3.out"});
         gsap.to("#lan-simulation-image", {opacity: 1, duration: 1, delay: 1.3, ease: "power3.out"});
         gsap.to("#download-btn", {opacity: 1, duration: 1, delay: 1.5, ease: "power3.out"});
+        gsap.to("#footer", {opacity: 1, duration: 1, delay: 1.7, ease: "power3.out"});
     </script>
 </body>
 </html>
